@@ -1,3 +1,4 @@
+
 let chkusers = JSON.parse(localStorage.getItem('users'))
 const allUsers= []
 // console.log(users,'users')
@@ -16,10 +17,9 @@ const signup =  function () {
         email,
         password
      }
-
      var regEmail=/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/g;  //Javascript reGex for Email Validation.
-     console.log(users2);
-     if (user !== null && password==confirmpass && password.length >8  && email !== "" && regEmail.test(email) ){
+     console.log(users2)
+     if (user !== null && password==confirmpass&& password.length >8  && email !== "" && regEmail.test(email) ){
           allUsers?.push(user, ...users2)
           alert('User Signup Successfully')
       }
@@ -39,20 +39,17 @@ const login = function() {
   const email=document.getElementById('loginemail');
   console.log(email.value);
   const pass=document.getElementById('loginpass');
-for(let i=0;i<users.length;i++)
-{
-   if(users[i].email==email.value && users[i].password==pass.value){
-      alert(true);
-      localStorage;setItem('loggedin', true);
-      navigate('mainpage.html')
-   }
+  console.log(pass.value)
+
+  for(let i=0;i<users.length;i++){
+  if(users[i].email==email.value && users[i].password==pass.value){
+    navigate('index.html')
+      localStorage.setItem('loggedin',true);
+  }else{
+    alert("Login failed")
+  }
+  }
 }
-function navigate(target) {
-  window.location.href= `./${target}`  ;
-}};
-
-// const btnSignUp = document.getElementById('btnSignUp')
-// btnSignUp.addEventListener('click', signup)
-
-// const btnLogIn = document.getElementById('btnLogIn')
-// btnLogIn.addEventListener('click',login)
+function navigate(target){
+  window.location.href=`./${target}`
+}

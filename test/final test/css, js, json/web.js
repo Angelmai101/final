@@ -14,6 +14,11 @@ fetch("api2.json", {
             <h2 class="heading">${Data[i].heading}</h2>
             <div class="container1"> 
             <h5 class="sub-title">${Data[i].subtitle}</h5>
+            </div>
+            <div>
+            <h5 class="sub-title">${Data[i].subtitle1}</h5>
+            </div>
+            <div>
             <img class="image" src="${Data[i].image}">
           </div>
                         `;

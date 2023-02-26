@@ -3,10 +3,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: antiquewhite;
+    background-color: rgb(255, 232, 243);
     padding: 20px 10px;
     margin:auto;
-    border-radius: 5px;
+    border-radius: 10%;
+    margin-top: 100px;
 }
 .submit {
  text-align: center;
@@ -15,7 +16,7 @@
 text-align: center;
 }
 .signup-box {
-width: 400px;
+/* width: 400px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -23,6 +24,15 @@ width: 400px;
     padding: 20px 10px;
     margin:auto;
     border-radius: 5px;
+    margin-top: 100px; */
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(255, 232, 243);
+    padding: 20px 10px;
+    margin:auto;
+    border-radius: 10%;
     margin-top: 100px;
 }
 
